@@ -1,0 +1,240 @@
+/* Estilos gerais */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+
+/* Estilo para o header-menu */
+header nav {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 50px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+header nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 1px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+
+header nav ul li {
+    margin-left: 20px;
+    align-self: center;
+
+}
+
+
+
+header nav ul li:hover a.border-bottom {
+    padding-bottom: 100;
+    color: #ff8c00;
+    border-bottom: 2px solid #ff8c00;
+
+}
+
+
+
+header nav ul li a {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+
+
+}
+
+header nav ul li a:hover {
+    color: #ff8c00;
+}
+
+
+.reserve-menu {
+    background-color: #ff8c00;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    align-self: center
+}
+
+.reserve-menu i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+
+.reserve-menu:hover {
+    background-color: black;
+    color: #ff9900;
+    padding: 10px 20px;
+}
+
+
+
+/* Estilo do header-top */
+.header-top {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.header-top p {
+    margin: 0;
+    padding-right: 30px;
+}
+
+.header-top img {
+    height: 20px;
+    margin-left: 10px;
+}
+
+.header-top a {
+    margin-left: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+}
+
+.social-icons a:hover {
+    color: #ffd700;
+}
+
+.social-icons .fa {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo para os blocos */
+
+#blocos {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .bloco {
+    width: 30%;
+    background-color: #f1f1f1;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+    height: 400px; /* Defina a altura que desejar */
+    position: relative; /* Adicione position: relative para que os elementos dentro do bloco possam ser posicionados */
+  }
+  
+  .bloco-img {
+    position: relative;
+    height: 80%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 50%; /* Defina a altura desejada para a imagem */
+    overflow: hidden;
+  }
+  
+  .bloco-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .bloco-titulo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+
+  
+  .bloco-desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+  }
+  
+  .bloco-desc a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .bloco-desc .reserve-btn {
+    background-color: #00bb00;
+  }
+  
+  .bloco-desc a:hover {
+    background-color: #555;
+  }
+  
