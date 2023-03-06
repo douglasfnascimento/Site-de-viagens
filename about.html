@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jeri Tour - Viagens para Jericoacoara</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../Site de viagens/css/main.css">
+    <link rel="stylesheet" type="text/css" href="./font-awesome/css/all.min.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-top">
+            <nav class="header-botao">
+                <ul>
+                    <li><a href="#" class="reserve-menu"><i class="fas fa-calendar-alt"></i> Reserve</a></li>
+                </ul>
+            </nav>
+            <div class="header-info">
+                <p>Endereço: Rua dos Ventos, Jericoacoara - CE</p>
+                <p>Telefone: (88) 99999-9999</p>
+                <p>Email: contato@jeritour.com</p>
+            </div>
+            <div class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </div>
+        </div>
+        <div class="header-menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="logo-img"><img src="https://www.jericharmosa4x4.com.br/assets/images/fundo-branco-deitado-532x151.png" alt="Jeri Tour"
+                        class="logo-img"></a></li>
+                    <li><a href="about.html" class="border-bottom">Sobre</a></li>
+                    <li><a href="blog.html" class="border-bottom">Blog</a></li>
+                    <li><a href="modalidades.html" class="border-bottom">Modalidades</a></li>
+                    <li><a href="destinos.html" class="border-bottom">Destinos</a></li>
+                    <li><a href="contact.html" class="border-bottom">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<h1>Sobre o Jeri Tour</h1>
+<p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque amet sunt repellat voluptatum, temporibus quam, ex saepe earum facere iste incidunt animi eligendi ducimus eveniet magni perspiciatis. Molestias, rem alias.
+</p>
+<p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia sapiente commodi quia aliquam corrupti molestias, aut tempore sequi repellendus officiis odio praesentium explicabo. Sunt eligendi possimus ratione magni, quia eos laboriosam quod. Sint eveniet earum adipisci ea impedit amet qui minus. Distinctio sapiente aperiam vero sequi molestias error dolores aliquam quia. Tempore accusantium reiciendis est atque voluptate aperiam et perferendis voluptatibus, magnam natus sapiente. Voluptatem porro necessitatibus eligendi numquam quos iusto quisquam, illum incidunt praesentium id magnam facere voluptas laudantium perspiciatis voluptates aspernatur pariatur laboriosam eum minus illo commodi tempora vero. Quas voluptatum tenetur, ut iste assumenda quibusdam praesentium aliquam!
+
+</p>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="footer__texto">&copy; 2023 Jeri Tour. Todos os direitos reservados.</p>
+                    <ul class="footer__redes-sociais">
+                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        // Código para scroll suave nos links da navbar
+        $(document).ready(function () {
+            $('a[href^="#"]').on('click', function (event) {
+                var target = $(this.getAttribute('href'));
+                if (target.length) {
+                    event.preventDefault();
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top - 60
+                    }, 1000);
+                }
+            });
+        });
+
+        // Código para mudar a cor da navbar quando o usuário rola a página
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('nav').addClass('nav-color');
+            } else {
+                $('nav').removeClass('nav-color');
+            }
+        });
+    </script>
+</body>
+
+</html>
